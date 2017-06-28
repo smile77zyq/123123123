@@ -26,3 +26,13 @@ Before running the tests make sure you are serving the app via `ng serve`.
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+没有 github 账号的, 到 https://github.com 注册.
+
+开发人员 | 路径
+--------|-----
+蚊基 | http://localhost:4200/#/mj
+苗茁 | http://localhost:4200/#/mz
+张玲玲 | http://localhost:4200/#/zll
+郑亚琪 | http://localhost:4200/#/zyq

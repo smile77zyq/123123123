@@ -1,18 +1,5 @@
 import { Injectable } from '@angular/core';
 
-@Injectable()
-export class PinyinService {
-    // 你好吗 -> NHM
-    public pinyin(chinese?: string): string {
-        return chinese == null ? '' : pinyinCvt(true, chinese);
-    }
-
-    // 你好吗 -> NiHaoMa
-    public pinyinFull(chinese?: string): string {
-        return chinese == null ? '' : pinyinCvt(false, chinese);
-    }
-}
-
 const pinyinCvt = function (isShort: boolean, chinese?: string): string {
     isShort = isShort || false;
     chinese = chinese || '';
@@ -49,6 +36,19 @@ const pinyinCvt = function (isShort: boolean, chinese?: string): string {
         return null;
     };
 };
+
+@Injectable()
+export class PinyinService {
+    // 你好吗 -> NHM
+    public pinyin(chinese?: string): string {
+        return chinese == null ? '' : pinyinCvt(true, chinese);
+    }
+
+    // 你好吗 -> NiHaoMa
+    public pinyinFull(chinese?: string): string {
+        return chinese == null ? '' : pinyinCvt(false, chinese);
+    }
+}
 
 interface PinyinObject {
     a: string;
